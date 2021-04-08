@@ -57,21 +57,26 @@
         
         .contenido-header {
             height: 100%;
-            display: block;
             align-items: center;
+        }
+        
+        .barra {
+            display: block;
+            background-color: #333333;
+            text-align: center;
         }
         
         @media (min-width: 768px) {
             .contenido-header {
                 text-align: left;
             }
-        }
-        
-        .barra {
-            display: flex;
-            justify-content: space-between;
-            background-color: #333333;
-            text-align: center;
+            .barra {
+                display: flex;
+                justify-content: space-between;
+                max-width: 120rem;
+                max-height: 10rem;
+                padding: 1rem;
+            }
         }
         
         .barra .navegacion {
@@ -82,7 +87,6 @@
             color: #ffffff;
             text-decoration: none;
             font-size: 2.4rem;
-            text-align: center;
             margin: 0 0.5rem;
         }
         
