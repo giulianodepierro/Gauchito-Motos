@@ -27,6 +27,11 @@
             margin: 0 auto;
         }
         
+        a {
+            font-size: 1rem;
+            font-family: sans-serif;
+        }
+        
         .clearfix::after {
             content: '';
             clear: both;
@@ -62,7 +67,17 @@
         
         .barra {
             display: block;
-            background-color: #333333;
+            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6d6f77+0,1b1e1a+59,28343b+100 */
+            background: rgb(109, 111, 119);
+            /* Old browsers */
+            background: -moz-linear-gradient(top, rgba(109, 111, 119, 1) 0%, rgba(27, 30, 26, 1) 59%, rgba(40, 52, 59, 1) 100%);
+            /* FF3.6-15 */
+            background: -webkit-linear-gradient(top, rgba(109, 111, 119, 1) 0%, rgba(27, 30, 26, 1) 59%, rgba(40, 52, 59, 1) 100%);
+            /* Chrome10-25,Safari5.1-6 */
+            background: linear-gradient(to bottom, rgba(109, 111, 119, 1) 0%, rgba(27, 30, 26, 1) 59%, rgba(40, 52, 59, 1) 100%);
+            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6d6f77', endColorstr='#28343b', GradientType=0);
+            /* IE6-9 */
             text-align: center;
         }
         
@@ -86,8 +101,13 @@
         .barra a {
             color: #ffffff;
             text-decoration: none;
-            font-size: 2.4rem;
+            text-transform: uppercase;
+            font-size: 1.8rem;
             margin: 0 0.5rem;
+        }
+        
+        .barra a:hover {
+            color: #ff0000;
         }
         
         .barra .whats {
@@ -97,4 +117,19 @@
             font-weight: 700;
             margin-top: 0;
             align-items: center;
+        }
+        
+        .portada {
+            margin: -3rem 0;
+        }
+        
+        .contenido-header .portada {
+            background: url(../img/portada3.jpg);
+            background-position: center center;
+            background-size: cover;
+            align-items: center;
+            height: 100%;
+            /*100% tamaño de la ventana*/
+            min-height: 60rem;
+            /*tamaño munimo  de ventna px=600*/
         }
