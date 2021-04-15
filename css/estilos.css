@@ -72,7 +72,7 @@
         /**header**/
         
         .contenido-header {
-            height: 100%;
+            width: 100%;
             align-items: center;
         }
         
@@ -134,7 +134,7 @@
             margin: -3rem 0;
         }
         
-        .contenido-header .portada {
+        header .portada {
             background: url(../img/portada3.jpg);
             background-position: center center;
             background-size: cover;
@@ -143,4 +143,49 @@
             /*100% tamaño de la ventana*/
             min-height: 60rem;
             /*tamaño munimo  de ventna px=600*/
+        }
+        /**SERVICIOS**/
+        
+        .contenido-servicios {
+            background-color: rgba(255, 255, 255, .3);
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .contenido-servicios h3 {}
+        
+        .contenido-servicios .servicios {
+            display: flex;
+            grid-template-columns: repeat(3, 50px);
+            justify-content: center;
+        }
+        
+        .servicio {
+            padding: 6rem;
+        }
+        
+        .servicio h3 {
+            font-size: 2.5rem;
+            font-family: 'Lato';
+        }
+        
+        .articulos {}
+        /**aRTICULOS**/
+        
+        .contenido-principal {
+            margin-top: 2rem;
+            text-align: center;
+            border-style: groove;
+        }
+        
+        .contenido-principal .articulos {
+            display: flex;
+            justify-content: space-between;
+            grid-template-columns: repeat(3, 33.3%);
+            background-color: white;
+        }
+        
+        .articulo {
+            padding: 1rem;
+            border-color: seagreen;
         }
