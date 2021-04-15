@@ -77,7 +77,7 @@
         }
         
         .barra {
-            display: block;
+            display: grid;
             /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6d6f77+0,1b1e1a+59,28343b+100 */
             background: rgb(109, 111, 119);
             /* Old browsers */
@@ -90,6 +90,14 @@
             filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6d6f77', endColorstr='#28343b', GradientType=0);
             /* IE6-9 */
             text-align: center;
+        }
+        
+        .barra {
+            display: grid;
+            justify-content: space-between;
+            max-width: 120rem;
+            max-height: 10rem;
+            padding: 1rem;
         }
         
         @media (min-width: 768px) {
@@ -106,6 +114,7 @@
         }
         
         .barra .navegacion {
+            display: grid;
             margin: 2rem 0 0 0;
         }
         
@@ -131,15 +140,22 @@
         }
         
         .portada {
-            margin: -3rem 0;
+            margin: 00 0;
+        }
+        
+        .contenedor-portada {
+            max-width: 1200px;
+            margin: 0 auto;
         }
         
         header .portada {
-            background: url(../img/portada3.jpg);
-            background-position: center center;
+            background: url(../img/portada.jpg);
+            background-position: center;
             background-size: cover;
+            text-align: center;
             align-items: center;
-            height: 100%;
+            height: auto;
+            max-width: 1200px;
             /*100% tamaño de la ventana*/
             min-height: 60rem;
             /*tamaño munimo  de ventna px=600*/
