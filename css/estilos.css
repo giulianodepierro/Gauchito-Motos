@@ -1,207 +1,213 @@
-        html {
-            box-sizing: border-box;
-            font-size: 62.5%;
-        }
-        
-        *,
-        *:before,
-        *:after {
-            box-sizing: inherit;
-        }
-        
-        body {
-            font-family: 'Lato', sans-serif;
-            margin: 0;
-            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6d6f77+0,1b1e1a+59,28343b+100 */
-            background: rgb(109, 111, 119);
-            /* Old browsers */
-            background: -moz-linear-gradient(top, rgba(109, 111, 119, 1) 0%, rgba(27, 30, 26, 1) 59%, rgba(40, 52, 59, 1) 100%);
-            /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, rgba(109, 111, 119, 1) 0%, rgba(27, 30, 26, 1) 59%, rgba(40, 52, 59, 1) 100%);
-            /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, rgba(109, 111, 119, 1) 0%, rgba(27, 30, 26, 1) 59%, rgba(40, 52, 59, 1) 100%);
-            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6d6f77', endColorstr='#28343b', GradientType=0);
-            /* IE6-9 */
-        }
-        
-        .site-header {
-            padding: 20px 0 20px 0;
-        }
-        
-        p {
-            font-size: 2rem;
-        }
-        
-        .contenedor {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        a {
-            font-size: 1rem;
-            font-family: sans-serif;
-        }
-        
-        .clearfix::after {
-            content: '';
-            clear: both;
-            display: block;
-        }
-        
-        img {
-            max-width: 100%;
-            display: block;
-        }
-        
-        h1 {
-            font-size: 4.2rem;
-        }
-        
-        h2 {
-            font-size: 3.6rem;
-        }
-        
-        h3 {
-            font-size: 3.0rem;
-        }
-        
-        h4 {
-            font-size: 2.8rem;
-        }
-        /**header**/
-        
-        .contenido-header {
-            width: 100%;
-            align-items: center;
-        }
-        
-        .barra {
-            display: grid;
-            /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#6d6f77+0,1b1e1a+59,28343b+100 */
-            background: rgb(109, 111, 119);
-            /* Old browsers */
-            background: -moz-linear-gradient(top, rgba(109, 111, 119, 1) 0%, rgba(27, 30, 26, 1) 59%, rgba(40, 52, 59, 1) 100%);
-            /* FF3.6-15 */
-            background: -webkit-linear-gradient(top, rgba(109, 111, 119, 1) 0%, rgba(27, 30, 26, 1) 59%, rgba(40, 52, 59, 1) 100%);
-            /* Chrome10-25,Safari5.1-6 */
-            background: linear-gradient(to bottom, rgba(109, 111, 119, 1) 0%, rgba(27, 30, 26, 1) 59%, rgba(40, 52, 59, 1) 100%);
-            /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-            filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#6d6f77', endColorstr='#28343b', GradientType=0);
-            /* IE6-9 */
-            text-align: center;
-        }
-        
-        .barra {
-            display: grid;
-            justify-content: space-between;
-            max-width: 120rem;
-            max-height: 10rem;
-            padding: 1rem;
-        }
-        
-        @media (min-width: 768px) {
-            .contenido-header {
-                text-align: left;
-            }
-            .barra {
-                display: flex;
-                justify-content: space-between;
-                max-width: 120rem;
-                max-height: 10rem;
-                padding: 1rem;
-            }
-        }
-        
-        .barra .navegacion {
-            display: grid;
-            margin: 2rem 0 0 0;
-        }
-        
-        .barra a {
-            color: #ffffff;
-            text-decoration: none;
-            text-transform: uppercase;
-            font-size: 1.8rem;
-            margin: 0 0.5rem;
-        }
-        
-        .barra a:hover {
-            color: #ff0000;
-        }
-        
-        .barra .whats {
-            color: #00dd2d;
-            display: flex;
-            font-size: 2.3rem;
-            font-weight: 700;
-            margin-top: 0;
-            align-items: center;
-        }
-        
-        .portada {
-            margin: 00 0;
-        }
-        
-        .contenedor-portada {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        
-        header .portada {
-            background: url(../img/portada.jpg);
-            background-position: center;
-            background-size: cover;
-            text-align: center;
-            align-items: center;
-            height: auto;
-            max-width: 1200px;
-            /*100% tamaño de la ventana*/
-            min-height: 60rem;
-            /*tamaño munimo  de ventna px=600*/
-        }
-        /**SERVICIOS**/
-        
-        .contenido-servicios {
-            background-color: rgba(255, 255, 255, .3);
-            text-align: center;
-            padding: 2rem;
-        }
-        
-        .contenido-servicios h3 {}
-        
-        .contenido-servicios .servicios {
-            display: flex;
-            grid-template-columns: repeat(3, 50px);
-            justify-content: center;
-        }
-        
-        .servicio {
-            padding: 6rem;
-        }
-        
-        .servicio h3 {
-            font-size: 2.5rem;
-            font-family: 'Lato';
-        }
-        
-        .articulos {}
-        /**aRTICULOS**/
-        
-        .contenido-principal {
-            margin-top: 2rem;
-            text-align: center;
-            border-style: groove;
-        }
-        
-        .contenido-principal .articulos {
-            display: flex;
-            justify-content: space-between;
-            grid-template-columns: repeat(3, 33.3%);
-            background-color: white;
-        }
-        
-        .articulo {
-            padding: 1rem;
-            border-color: seagreen;
-        }
+:root {
+    --verdePrimario: #00b51a;
+    --rojoPrimario: #ff3333;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#b4e391+0,61c419+50,b4e391+100;Green+3D */
+    background: rgb(180, 227, 145);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(180, 227, 145, 1) 0%, rgba(97, 196, 25, 1) 50%, rgba(180, 227, 145, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(180, 227, 145, 1) 0%, rgba(97, 196, 25, 1) 50%, rgba(180, 227, 145, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(180, 227, 145, 1) 0%, rgba(97, 196, 25, 1) 50%, rgba(180, 227, 145, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391', GradientType=0);
+    /* IE6-9 */
+}
+
+.site-header {
+    padding: 20px 0 20px 0;
+}
+
+p {
+    font-size: 2rem;
+}
+
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+a {
+    font-size: 1rem;
+    font-family: sans-serif;
+}
+
+.clearfix::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+h1 {
+    font-size: 4.2rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 3.0rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+
+/**header**/
+
+.site-header {}
+
+.contenido-header {
+    padding: 1.5rem;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,45484d+100 */
+    background: rgb(0, 0, 0);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(69, 72, 77, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(69, 72, 77, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(69, 72, 77, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#45484d', GradientType=0);
+    /* IE6-9 */
+    margin-top: 0;
+}
+
+.contenido-header img {
+    margin: 0;
+    text-align: center;
+    align-items: center;
+}
+
+
+}
+.contenido-header {
+    padding: 0 1rem;
+    text-align: center;
+    align-items: center;
+}
+@media (min-width: 786px) {
+    .contenido-header {
+        grid-template-rows: none;
+        grid-template-columns: none;
+        grid-template-columns: 2Fr 8fr 2fr;
+        align-items: center;
+    }
+    
+    .contenido-header .navegacion {
+        grid-template-rows: none;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
+.contenido-header nav {
+    display: grid;
+    grid-template-columns: none;
+    grid-template-rows: repeat(5, 1fr);
+    text-align: center;
+}
+.contenido-header a {
+    padding: 5px 0;
+    font-size: 2rem;
+    color: #ffffff;
+    text-decoration: none;
+}
+.contenido-header a:hover {
+    color: var(--verdePrimario)
+}
+.site-header .whats {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem;
+    align-items: center;
+    color: #00bb2d;
+}
+.portada {
+    margin: 00 0;
+}
+.contenedor-portada {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header .portada {
+    background: url(../img/portada.jpg);
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    height: auto;
+    max-width: 1200px;
+    /*100% tamaño de la ventana*/
+    
+    min-height: 60rem;
+    /*tamaño munimo  de ventna px=600*/
+}
+
+/**SERVICIOS**/
+.contenido-servicios {
+    background-color: rgba(255, 255, 255, .3);
+    text-align: center;
+    padding: 2rem;
+}
+.contenido-servicios h2 {
+    color: var(--rojoPrimario);
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+}
+.contenido-servicios .servicios {
+    display: flex;
+    grid-template-columns: repeat(3, 50px);
+    justify-content: center;
+}
+.servicio {
+    padding: 6rem;
+}
+.servicio h3 {
+    font-size: 2.5rem;
+    font-family: 'Lato';
+}
+.articulos {}
+
+/**aRTICULOS**/
+.contenido-principal {
+    margin-top: 2rem;
+    text-align: center;
+    border-style: groove;
+}
+.contenido-principal h2 {
+    color: var(--rojoPrimario);
+}
+.contenido-principal .articulos {
+    display: flex;
+    justify-content: space-between;
+    grid-template-columns: repeat(3, 33.3%);
+    background-color: white;
+}
+.articulo {
+    padding: 1rem;
+    border-color: seagreen;
+}
