@@ -20,6 +20,12 @@ body {
     background-color: azure;
 }
 
+.contenedor {
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
 .site-header {
     padding: 20px 0 20px 0;
 }
@@ -47,21 +53,49 @@ img {
     width: 100%;
 }
 
-.contenedor {
-    max-width: 1200px;
-    text-align: center;
-}
-
 
 /**header**/
 
 .barra {
-    background-color: #585858;
+    background-color: #000000;
+    background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
+    padding: 0;
+    align-items: center;
+}
+
+.contenido-header nav {
+    display: grid;
+    grid-template-rows: repeat(5, 1r);
+    padding: 0;
+}
+
+nav a {
+    font-size: 2rem;
+    font-family: 'Staatliches', cursive;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 2px;
 }
 
 .whats {
     font-size: 2rem;
     color: var(--verdePrimario);
-    display: grid;
-    grid-template-columns: 50%, 50%;
+}
+
+@media (min-width:768px) {
+    .barra {
+        display: grid;
+        grid-template-columns: 25% 55% 20%;
+        align-items: center;
+    }
+    .contenido-header nav {
+        display: flex;
+        justify-content: space-between;
+        padding: ;
+    }
+    nav a {
+        padding: 0;
+        margin: 0;
+        font-size: 2.5rem;
+    }
 }
