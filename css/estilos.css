@@ -34,9 +34,14 @@ p {
     font-size: 2rem;
 }
 
+a {
+    text-decoration: none;
+}
+
 h1 {
     font-family: 'Catamaran', sans-serif;
-    font-size: 2rem;
+    font-size: 4rem;
+    color: var(--verdePrimario);
 }
 
 h2 {
@@ -98,4 +103,68 @@ nav a {
         margin: 0;
         font-size: 2.5rem;
     }
+}
+
+
+/**Servicios**/
+
+.contenido-servicios {
+    margin: 0 auto;
+    text-align: center;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#febbbb+0,fe9090+45,ff5c5c+100;Red+3D+%231 */
+    background: rgb(254, 187, 187);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, rgba(254, 187, 187, 1) 0%, rgba(254, 144, 144, 1) 45%, rgba(255, 92, 92, 1) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, rgba(254, 187, 187, 1) 0%, rgba(254, 144, 144, 1) 45%, rgba(255, 92, 92, 1) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, rgba(254, 187, 187, 1) 0%, rgba(254, 144, 144, 1) 45%, rgba(255, 92, 92, 1) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c', GradientType=0);
+    /* IE6-9 */
+}
+
+.contenido-servicios h1 {}
+
+.contenido-servicios .foto img {
+    max-width: 66.6%;
+    max-height: 66.6%;
+    align-items: baseline;
+}
+
+
+/**articulos*/
+
+.articulo {
+    background-color: rgb(90, 88, 88);
+    max-width: 95%;
+    text-align: center;
+    margin: 0;
+}
+
+.articulo img {
+    padding: 1rem;
+    height: 220px;
+    width: 380px;
+}
+
+@media (min-width: 768px) {
+    .articulos {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 0;
+    }
+}
+
+.articulo p {
+    font-family: 'Catamaran', sans-serif;
+    color: var(--verdePrimario);
+}
+
+.articulo p span {
+    color: aqua;
+}
+
+.contenido-footer {
+    text-align: center;
 }
