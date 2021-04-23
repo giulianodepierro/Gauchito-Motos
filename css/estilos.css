@@ -58,6 +58,11 @@ img {
     width: 100%;
 }
 
+.precio {
+    color: #1100ff;
+    s
+}
+
 
 /**header**/
 
@@ -167,4 +172,35 @@ nav a {
 
 .contenido-footer {
     text-align: center;
+}
+
+
+/**vermoto***/
+
+.descripcion {
+    max-width: 300px;
+    text-align: center;
+    border: 1px #414141;
+    border-radius: 1rem;
+    margin: 2rem;
+}
+
+.resalte-detalle {
+    display: flex;
+    justify-content: space-between;
+    color: #1100ff;
+    padding: 0 1rem;
+    text-transform: uppercase;
+}
+
+.resalte-detalle span {
+    color: #ff3333;
+    font-weight: normal;
+}
+
+@media (min-width:768px) {
+    .vista-vehiculo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
 }
