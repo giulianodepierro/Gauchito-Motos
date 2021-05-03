@@ -36,62 +36,35 @@ font-family: 'Staatliches', cursive;-->
                 <p><i class="fab fa-whatsapp"></i> +54 9 236-4675976</p>
             </div>
         </div>
-        <div class="portada contenedor">
-            <img src="img/portada.jpg" alt="">
-
-        </div>
-
-
     </header>
-    <Section class=" contenido-servicios">
-        <h1>Todo para tu moto</h1>
-        <div class="foto">
-            <img src="img/Servicios.jpg" alt="">
-        </div>
-        <!--FOTO-->
-    </Section>
-    <!--Section-->
 
-    <main class=" contenedor">
-        <div class="contenido-principal">
-            <h1>Tu proxima Ok</h1>
-
-            <div class="articulos">
-
-
-                <div class="articulo">
-                    <div class="foto">
-                        <img src="img/tornado.jpg" alt="">
-                    </div>
-                    <div class="descripcion">
-                        <p>Honda <span> Tornado 250</span></p>
-
-                        <a href="vermoto.html" class="boton">Detalles</a>
-                    </div>
-
+    <main class="contenido-contacto contenedor ">
+        <form action="formulario">
+            <fieldset>
+                <legend>Envianos tu consulta</legend>
+                <!--Nombre-->
+                <div class="grilla">
+                    <label for="Nombre">Nombre:</label>
+                    <input type="text" id="Nombre" placeholder="Nombre">
                 </div>
+                <div class="grilla">
+                    <!--Email-->
 
-                <div class="articulo">
-                    <div class="foto">
-                        <img src="img/crypton.jpg" alt="">
-                    </div>
-                    <div class="descripcion">
-                        <p>Yamaha <span> Crypton-110</span></p>
-                        <a href="vermoto.html" class="boton">Detalles</a>
-                    </div>
+                    <label for="email">E-Mail:</label>
+                    <input type="email" id="email" placeholder="Mail" required>
                 </div>
-
-                <div class="articulo">
-                    <div class="foto">
-                        <img src="img/xtz250.jpg" alt="">
-                    </div>
-                    <div class="descripcion">
-                        <p>Yamaha <span> XTZ-250</span></p>
-                        <a href="vermoto.html" class="boton">Detalles</a>
-                    </div>
+                <div class="grilla">
+                    <!--Telefono-->
+                    <label for="telefono">Telefono:</label>
+                    <input type="tel" id="telefono" placeholder="Telefono" required>
                 </div>
-            </div>
-
+                <div class="grilla">
+                    <!--Mensaje-->
+                    <label for="mensaje">Escribe un mensaje:</label>
+                    <textarea id="mensaje"></textarea>
+                </div>
+            </fieldset>
+        </form>
     </main>
 
     <footer class=" contenido-header contenedor ">
@@ -111,10 +84,7 @@ font-family: 'Staatliches', cursive;-->
                 <p><i class="fab fa-whatsapp"></i> +54 9 236-4675976</p>
             </div>
         </div>
-        <div class="mas-datos">
-            <p>Direccion <span>Sampayo 174 - Junin(B)</span></p>
-            <p>Mail: <span>info@gauchitomotos.com.ar</span></p>
-        </div>
+
 
 
     </footer>
