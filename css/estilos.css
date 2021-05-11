@@ -1,6 +1,7 @@
 :root {
     --verdePrimario: #00b51a;
     --rojoPrimario: #ff3333;
+    --naranja: #FF9933;
 }
 
 html {
@@ -40,7 +41,7 @@ a {
 h1 {
     font-family: 'Catamaran', sans-serif;
     font-size: 4rem;
-    color: var(--verdePrimario);
+    color: var(--rojoPrimario);
 }
 
 h2 {
@@ -175,10 +176,14 @@ nav a:hover {
 }
 
 .articulo img {
-    padding: 1rem;
+    padding: 0rem;
     height: 220px;
     width: 380px;
     background-color: white;
+}
+
+.usadas .articulo img {
+    padding: -3rem;
 }
 
 .articulo a {
@@ -211,6 +216,14 @@ nav a:hover {
 
 /**vermoto***/
 
+.vista-vehiculo {}
+
+.detalle-vehiculo {
+    background-color: rgba(22, 22, 22, .2);
+    height: 46rem;
+    text-align: center;
+}
+
 .descripcion {
     max-width: 300px;
     text-align: center;
@@ -219,17 +232,19 @@ nav a:hover {
     margin: 2rem;
 }
 
+.descripcion p {}
+
 .resalte-detalle {
     display: flex;
     justify-content: space-between;
-    color: #1100ff;
+    color: var(--rojoPrimario);
     padding: 0 1rem;
     text-transform: uppercase;
 }
 
 .resalte-detalle span {
-    color: #ff3333;
-    font-weight: normal;
+    color: var(--verdePrimario);
+    font-weight: bolder;
 }
 
 @media (min-width:768px) {
