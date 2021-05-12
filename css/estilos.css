@@ -216,12 +216,15 @@ nav a:hover {
 
 /**vermoto***/
 
-.vista-vehiculo {}
+.vista-vehiculo {
+    display: block;
+    align-items: center;
+    text-align: center;
+}
 
 .detalle-vehiculo {
     background-color: rgba(22, 22, 22, .2);
     height: 46rem;
-    text-align: center;
 }
 
 .descripcion {
@@ -252,6 +255,10 @@ nav a:hover {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
+}
+
+.myCarousel {
+    height: 20rem;
 }
 
 
