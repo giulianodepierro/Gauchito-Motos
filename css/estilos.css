@@ -78,10 +78,10 @@ img {
 /**header**/
 
 .barra {
+    display: grid;
     background-color: #000000;
     background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
     padding: 0;
-    align-items: center;
 }
 
 .contenido-header nav {
@@ -101,7 +101,7 @@ nav a {
     padding: 1.5rem;
 }
 
-.navegacion {
+.subrayado {
     border-bottom: wheat solid 1px;
 }
 
@@ -111,7 +111,7 @@ nav a:hover {
 }
 
 .whats {
-    font-size: 2rem;
+    font-size: 1rem;
     color: var(--verdePrimario);
 }
 
@@ -133,9 +133,6 @@ nav a:hover {
     .whats {
         padding-top: 0.8rem;
     }
-    .navegacion {
-        display: block;
-    }
 }
 
 @media (min-width:768px) {
@@ -154,7 +151,7 @@ nav a:hover {
 }
 
 .flotante {
-    /*display: none;*/
+    display: none;
     height: 10rem;
     text-align: center;
 }
