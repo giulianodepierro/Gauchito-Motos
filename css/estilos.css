@@ -101,6 +101,11 @@ nav a {
     padding: 1.5rem;
 }
 
+.navegacion {
+    border-bottom: wheat solid 1px;
+}
+
+;
 nav a:hover {
     border: 2px solid #ffffff;
 }
@@ -114,7 +119,6 @@ nav a:hover {
     .barra {
         display: grid;
         grid-template-columns: 25% 55% 20%;
-        align-items: center;
     }
     .contenido-header nav {
         display: flex;
@@ -122,12 +126,15 @@ nav a:hover {
         padding: 1rem;
     }
     nav a {
+        margin-right: 1rem;
         padding: 0;
-        margin: 1rem;
         font-size: 2rem;
     }
     .whats {
         padding-top: 0.8rem;
+    }
+    .navegacion {
+        display: block;
     }
 }
 
@@ -140,6 +147,16 @@ nav a:hover {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
     }
+    .flotante {
+        display: flex;
+        max-width: 800px;
+    }
+}
+
+.flotante {
+    /*display: none;*/
+    height: 10rem;
+    text-align: center;
 }
 
 
